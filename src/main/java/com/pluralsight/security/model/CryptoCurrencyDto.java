@@ -11,7 +11,7 @@ import lombok.ToString;
 @EqualsAndHashCode
 public class CryptoCurrencyDto {
 
-	private final String symbol;
-	private final String name;
-	
+    private final String symbol;
+    private final String name;
+
 }

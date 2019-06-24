@@ -1,10 +1,6 @@
 package com.pluralsight.security.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 @AllArgsConstructor
 @Setter
@@ -12,9 +8,9 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 public class CreateSupportQueryDto {
-	
-	private String subject;
-	private String content;
-	private boolean resolved;
-	
+
+    private String subject;
+    private String content;
+    private boolean resolved;
+
 }

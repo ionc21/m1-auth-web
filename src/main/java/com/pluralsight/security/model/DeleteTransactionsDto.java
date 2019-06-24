@@ -9,6 +9,6 @@ import lombok.ToString;
 @ToString
 public class DeleteTransactionsDto {
 
-	private String[] id;
-	
+    private String[] id;
+
 }

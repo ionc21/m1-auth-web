@@ -1,10 +1,9 @@
 package com.pluralsight.security.repository;
 
+import com.pluralsight.security.entity.Portfolio;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.pluralsight.security.entity.Portfolio;
-
 public interface PortfolioRepository extends MongoRepository<Portfolio, String> {
-	
-	Portfolio findByUsername(String username);
+
+    Portfolio findByUsername(String username);
 }

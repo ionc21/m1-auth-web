@@ -5,8 +5,10 @@ import com.pluralsight.security.model.PostDto;
 
 public interface SupportCommandService {
 
-	void createQuery(CreateSupportQueryDto query);
-	void postToQuery(PostDto supportQueryPostModel);
-	void resolveQuery(String id);
-	
+    void createQuery(CreateSupportQueryDto query);
+
+    void postToQuery(PostDto supportQueryPostModel);
+
+    void resolveQuery(String id);
+
 }
