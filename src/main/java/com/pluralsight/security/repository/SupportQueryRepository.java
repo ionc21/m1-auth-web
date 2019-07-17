@@ -1,12 +1,13 @@
 package com.pluralsight.security.repository;
 
-import com.pluralsight.security.entity.SupportQuery;
-import org.springframework.data.mongodb.repository.MongoRepository;
-
 import java.util.List;
 
-public interface SupportQueryRepository extends MongoRepository<SupportQuery, String> {
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-    List<SupportQuery> findByUsername(String username);
+import com.pluralsight.security.entity.SupportQuery;
 
+public interface SupportQueryRepository extends MongoRepository<SupportQuery, String>{
+	
+	List<SupportQuery> findByUsername(String username);
+	
 }

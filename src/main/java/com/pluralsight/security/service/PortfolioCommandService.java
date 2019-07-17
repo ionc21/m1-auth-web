@@ -4,8 +4,7 @@ import com.pluralsight.security.model.AddTransactionToPortfolioDto;
 
 public interface PortfolioCommandService {
 
-    void addTransactionToPortfolio(AddTransactionToPortfolioDto request);
-
-    void removeTransactionFromPortfolio(String transactionId);
-
+	void addTransactionToPortfolio(AddTransactionToPortfolioDto request);
+	void removeTransactionFromPortfolio(String transactionId);
+	
 }

@@ -1,12 +1,12 @@
 package com.pluralsight.security.repository;
 
-import com.pluralsight.security.entity.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface UserRepository extends MongoRepository<User, String> {
+import com.pluralsight.security.entity.CryptoUser;
 
-    User findByUsername(String username);
+public interface UserRepository extends MongoRepository<CryptoUser, String> {
 
-    User findByEmail(String email);
-
+	CryptoUser findByUsername(String username);
+	CryptoUser findByEmail(String email);
+	
 }

@@ -5,8 +5,7 @@ import com.pluralsight.security.model.PortfolioPositionsDto;
 
 public interface PortfolioQueryService {
 
-    PortfolioPositionsDto getPortfolioPositions();
-
-    ListTransactionsDto getPortfolioTransactions();
-
+	PortfolioPositionsDto getPortfolioPositions();
+	ListTransactionsDto getPortfolioTransactions();
+	
 }

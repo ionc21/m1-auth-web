@@ -4,6 +4,6 @@ import java.math.BigDecimal;
 
 public interface PricingService {
 
-    BigDecimal getCurrentPriceForCrypto(String symbol);
-
+	BigDecimal getCurrentPriceForCrypto(String symbol);
+	
 }

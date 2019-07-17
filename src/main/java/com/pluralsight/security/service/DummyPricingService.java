@@ -1,15 +1,19 @@
 package com.pluralsight.security.service;
 
-import org.springframework.stereotype.Component;
-
 import java.math.BigDecimal;
+
+import org.springframework.stereotype.Component;
 
 @Component
 public class DummyPricingService implements PricingService {
 
-    @Override
-    public BigDecimal getCurrentPriceForCrypto(String symbol) {
-        return new BigDecimal("11000.00");
-    }
+	@Override
+	public BigDecimal getCurrentPriceForCrypto(String symbol) {
+		if(symbol.equals("BTC")) {
+			return new BigDecimal("8000.00");
+		} else {
+			return new BigDecimal("100.00");
+		}
+	}
 
 }
